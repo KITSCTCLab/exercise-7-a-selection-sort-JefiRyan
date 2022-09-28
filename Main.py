@@ -4,12 +4,12 @@ def selectionSort(array, size) -> List[int]:
   for i in range(len(arr)):
     minimum = i
     for j in range(i+1,len(arr)):
-      if arr[j] < arr[minimum]:
+      if array[j] < array[minimum]:
         minimum = j
-    temp = arr[i]
-    arr[i] = arr[minimum]
-    arr[minimum] = temp
-  return arr
+    temp = array[i]
+    array[i] = array[minimum]
+    array[minimum] = temp
+  return array
 
 # Do not change the following code
 input_data = input()
